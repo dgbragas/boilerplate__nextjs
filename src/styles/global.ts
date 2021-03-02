@@ -13,8 +13,8 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
 
     ::selection {
-      background: #8257e5;
-      color: #fff;
+      background: ${({ theme: { colors } }) => colors.primary};
+      color: ${({ theme: { colors } }) => colors.texts};
     }
   }
 
@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: #121214;
-    color: #fff;
+    color: ${({ theme: { colors } }) => colors.texts};
   }
 
   body, input, button, textarea {
