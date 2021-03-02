@@ -1,7 +1,21 @@
 {
-  "name": "app",
-  "version": "0.1.0",
   "private": true,
+  "name": "boilerplate__nextjs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "@dgbragas"
+  },
+  "description": "Fast startup for projects using Next.js with TypeScript",
+  "contributors": [
+    {
+      "name": "Diego Braga",
+      "url": "https://dgbragas.netlify.app"
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/dgbragas/boilerplate__nextjs"
+  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
