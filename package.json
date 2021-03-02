@@ -9,7 +9,7 @@
     }
   },
   "config": {
-    "commitzen": {
+    "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
@@ -17,7 +17,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "commit": "git commit"
+    "commit": "git-cz"
   },
   "dependencies": {
     "next": "10.0.7",
