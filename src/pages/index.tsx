@@ -1,3 +1,5 @@
+import * as S from '@/styles/pages/Home';
+
 export default function Home(): JSX.Element {
-  return <h1>Hello World</h1>;
+  return <S.Main />;
 }
