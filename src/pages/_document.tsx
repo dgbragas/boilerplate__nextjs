@@ -17,7 +17,7 @@ export default class AppDocument extends Document {
         originalRenderPage({
           enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
         });
-
+      console.log(ctx);
       const initialProps = await Document.getInitialProps(ctx);
       return {
         ...initialProps,
