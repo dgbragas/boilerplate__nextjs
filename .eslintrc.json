@@ -17,7 +17,13 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier",
+    "import-helpers"
+  ],
   "rules": {
     "@typescript-eslint/no-use-before-define": ["error"],
     "react-hooks/rules-of-hooks": "error",
@@ -42,7 +48,22 @@
     ],
     "import/prefer-default-export": "off",
     "prettier/prettier": "error",
-    "no-use-before-define": "off"
+    "no-use-before-define": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          ["/^react/", "/^next/"],
+          "module",
+          "/^@/components/",
+          "/^@/*/",
+          ["parent", "index"],
+          "sibling"
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ]
   },
   "settings": {
     "import/resolver": {
