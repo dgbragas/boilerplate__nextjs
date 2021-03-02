@@ -5,7 +5,7 @@ const headings = [1, 2, 3, 4, 5, 6].map(number => `h${number}`).join(', ');
 export const GlobalStyle = createGlobalStyle`
     * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 150%;
     margin: 0;
     outline: 0;
@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, button, textarea {
-    font-family: 400 1rem Arial, Helvetica, sans-serif;
+    font-family: 400 1rem 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 
